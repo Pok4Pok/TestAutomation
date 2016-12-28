@@ -1,0 +1,10 @@
+pages\EngProfilePage.class
+pages\LoginPage.class
+pages\AbstractPage.class
+steps\Steps.class
+driver\DriverWorker.class
+pages\EpisodePage.class
+pages\ProfilePage.class
+pages\MainPage.class
+pages\ShowPage.class
+TestAutomation.class

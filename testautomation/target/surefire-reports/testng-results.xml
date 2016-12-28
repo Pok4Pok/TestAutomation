@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="9" failed="1" total="10" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="38821" started-at="2016-12-27T17:33:13Z" finished-at="2016-12-27T17:33:52Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="38821" started-at="2016-12-27T17:33:13Z" finished-at="2016-12-27T17:33:52Z">
+      <class name="TestAutomation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="22326" started-at="2016-12-27T20:33:13Z" description="Init browser" finished-at="2016-12-27T20:33:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="oneCanAddComment()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanAddComment" duration-ms="11136" started-at="2016-12-27T20:33:36Z" description="Add a comment" finished-at="2016-12-27T20:33:47Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[this.browser.getBrowserForTab is not a function
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-6PIH1M3', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161031133903, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: a680d48d-2380-44ef-8ef8-2b8989615aee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: this.browser.getBrowserForTab is not a function
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-6PIH1M3', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161031133903, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: a680d48d-2380-44ef-8ef8-2b8989615aee
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at pages.ShowPage.watchShow(ShowPage.java:52)
+	at steps.Steps.addShow(Steps.java:53)
+	at TestAutomation.oneCanAddComment(TestAutomation.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanAddComment -->
+        <test-method status="FAIL" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:47Z" description="Stop Browser" finished-at="2016-12-27T20:33:47Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-6PIH1M3', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161031133903, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: a680d48d-2380-44ef-8ef8-2b8989615aee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-6PIH1M3', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161031133903, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: a680d48d-2380-44ef-8ef8-2b8989615aee
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:497)
+	at driver.DriverWorker.closeDriver(DriverWorker.java:36)
+	at steps.Steps.closeDriver(Steps.java:22)
+	at TestAutomation.stopBrowser(TestAutomation.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="oneCanAddFriend()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanAddFriend" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Add a friend" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanAddFriend -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="oneCanAddShow()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanAddShow" duration-ms="1" started-at="2016-12-27T20:33:52Z" description="Add show to profile" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanAddShow -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="oneCanAddToFaves()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanAddToFaves" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Add show to favorites" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanAddToFaves -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="oneCanChangeLanguage()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanChangeLanguage" duration-ms="1" started-at="2016-12-27T20:33:52Z" description="Change language" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanChangeLanguage -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="oneCanCheckEpisode()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanCheckEpisode" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Check watched episodes" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanCheckEpisode -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="oneCanLoginMyshows()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanLoginMyshows" duration-ms="1" started-at="2016-12-27T20:33:52Z" description="Login to Myshows" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanLoginMyshows -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="oneCanRateComment()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanRateComment" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Rate a comment" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanRateComment -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="oneCanRateEpisode()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanRateEpisode" duration-ms="1" started-at="2016-12-27T20:33:52Z" description="Rate an episode" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanRateEpisode -->
+        <test-method status="SKIP" signature="oneCanRateShow()[pri:0, instance:TestAutomation@79b4d0f]" name="oneCanRateShow" duration-ms="1" started-at="2016-12-27T20:33:52Z" description="Rate a show" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneCanRateShow -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:TestAutomation@79b4d0f]" name="setUp" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Init browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="SKIP" signature="stopBrowser()[pri:0, instance:TestAutomation@79b4d0f]" name="stopBrowser" is-config="true" duration-ms="0" started-at="2016-12-27T20:33:52Z" description="Stop Browser" finished-at="2016-12-27T20:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- TestAutomation -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
